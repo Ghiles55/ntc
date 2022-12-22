@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400&display=swap");
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  overflow-x: hidden;
+ 
 }
 
-.mainHeader{
+.mainHeader {
   width: 100vw;
   height: 16rem;
   display: flex;
@@ -16,16 +16,16 @@ body {
   align-items: center;
   justify-content: center;
 }
-#headerMenu{
-  height: 6rem;
-  width: 100vw;
+#headerMenu {
+  height: 82px;
+  /* width: 100vw; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-right: 20%;
   background-color: #efefef;
 }
-.menuBtn{
+.menuBtn {
   height: 6rem;
   width: 10rem;
   border: none;
@@ -40,18 +40,17 @@ body {
   background-color: red;
 } */
 
-.homeCarousel{
+.homeCarousel {
   height: 967px;
   width: 100vw;
 }
-.presentationContainer{
-display: flex;
-width: 95vw;
-flex-direction: column;
-padding: 24px;
-
+.presentationContainer {
+  display: flex;
+  width: 95vw;
+  flex-direction: column;
+  padding: 24px;
 }
-#presentationHeader{
+#presentationHeader {
   font-size: 56px;
   display: flex;
   flex-direction: column;
@@ -59,46 +58,56 @@ padding: 24px;
   align-items: center;
   margin-bottom: 24px;
 }
-#presentationHeader h1{
+#presentationHeader h1 {
   margin: 0;
-  margin-bottom: 12px
+  margin-bottom: 12px;
 }
-#headerLine{
+#headerLine {
   height: 1px;
   background-color: black;
   width: 362px;
 }
-#presentationBody{
+#presentationBody {
   font-size: 18px;
-  width: 60%;
+ width: 80%;
   line-height: 1.8em;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-#presentationFooter{
-display: flex;
-justify-content: flex-end;
-}
-#presentationFooter img{
+#presentationBody img {
   height: 260px;
   width: 320px;
 }
-.H_Products{
+.underlineText {
+  color: #3d90ce;
+}
+/* #presentationFooter {
+  display: flex;
+  justify-content: flex-end;
+}
+#presentationFooter img {
+  height: 260px;
+  width: 320px;
+} */
+.H_Products {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height:30rem
+  height: 30rem;
 }
-.H_Products_Text{
+.H_Products_Text {
   display: flex;
   flex-direction: column;
 }
-.H_Products_Categories{
+.H_Products_Categories {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-.H_Products_Categories div{
+.H_Products_Categories div {
   width: 30%;
   display: flex;
   justify-content: center;
@@ -106,3 +115,16 @@ justify-content: flex-end;
 /* .H_Products_Categories div img{
   width: 80%;
 } */
+
+#contactBox {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+#contactTitle {
+  font-size: 64px;
+  position: absolute;
+  right: 50vw;
+  transform: translateX(50%);
+}
