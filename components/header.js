@@ -6,10 +6,8 @@ export default function header() {
     <>
       <div className="mainHeader">
         <img
-          style={{ width: "300px", height: "300px" }}
           src="https://cdn.discordapp.com/attachments/1022933125107548242/1022946802430906490/Logo_Final_Plan_de_travail_1.png"></img>
-      </div>
-      <div id="headerMenu">
+          <div id="headerMenu">
         <Link href="/">
           <button className="menuBtn"> Acceuil</button>
         </Link>
@@ -22,6 +20,8 @@ export default function header() {
         <button className="menuBtn">A Propos</button>
         <button className="menuBtn">FAQ</button>
       </div>
+      </div>
+      
     </>
   );
 }

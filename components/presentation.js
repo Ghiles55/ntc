@@ -4,8 +4,8 @@ export default function presentation() {
   return (
     <div className="presentationContainer">
       <div id="presentationHeader">
-        <h1> Qui sommes nous ?</h1>
-        <div id="headerLine"></div>
+        <span> Qui sommes nous ?</span>
+        {/* <div id="headerLine"></div> */}
       </div>
       <div id="presentationBody">
         <div id="presentationText"> 

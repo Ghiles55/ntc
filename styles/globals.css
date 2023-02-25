@@ -1,130 +1,359 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
 html,
 body {
   padding: 0;
+  position: relative;
   margin: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+@media (min-width: 576px) {
+}
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+  }
+  .main_Body {
+    width: 1400px;
+
+    /* height: fit-content; */
+    position: relative;
+  }
+  .mainHeader {
+    width: 100%;
+    height: 120px;
+    /* align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 1440px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 10000;
+  }
+  .mainHeader img {
+    width: 200px;
+    height: 109px;
+  }
+  #headerMenu {
+    /* width: 100vw; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .menuBtn {
+    height: 6rem;
+    width: 10rem;
+    border: none;
+    border-radius: 16px;
+    background-color: transparent;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #4f4f4f;
+  }
+
+  .carouselContainer {
+    height: 531px;
+    width: 100%;
+    position: absolute;
+    top: 208px;
+    padding: 24px;
+  }
+  .presentationContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 24px;
+    position: absolute;
+    height: 421px;
+
+    top: 809px;
+  }
+  #presentationHeader {
+    /* font-size: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px; */
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #626262;
+  }
+  #presentationHeader h1 {
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  #headerLine {
+    height: 1px;
+    background-color: black;
+    width: 362px;
+  }
+  #presentationBody {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    width: 100%;
+    color: #838383;
+    display: flex;
+    justify-content: space-between;
+  }
+  #presentationText {
+    width: 60%;
+  }
+  #presentationBody img {
+    width: 260px;
+    height: 151px;
+  }
+  .underlineText {
+    color: #3d90ce;
+  }
+  /* #presentationFooter {
+    display: flex;
+    justify-content: flex-end;
+  }
+  #presentationFooter img {
+    height: 260px;
+    width: 320px;
+  } */
+  .H_Products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 783px;
+    top: 1212px;
+  }
+  .H_Products_Text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #706f6f;
+  }
+  .H_Products_Categories {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .H_Products_Cells {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 654px;
+    width: 684px;
+    
+    margin-top: 24px;
+  }
+  .H_Categories_Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 335px;
+    height: 299px;
+    cursor: pointer;
+    border-radius: 31px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .H_Categories_Card p {
+    font-family: "Inter";
+    width: 232px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #3d90ce;
+  }
+  .H_Products_C_Description {
+    height: 100%;
+    width: 340px;
+
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #838383;
+    margin-top: 24px;
+  }
+  .H_Products_C_Description p {
+    margin-top: 120px;
+  }
+
+  /* .H_Products_Categories div img{
+    width: 80%;
+  } */
+
+  #contactBox {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+  #contactTitle {
+    font-size: 64px;
+    position: absolute;
+    right: 50vw;
+    transform: translateX(50%);
+  }
+  .footer {
+    background-color: #eae9e9;
+  }
+}
+.title_pill {
+  position: absolute;
+  top: 206px;
+  left: 0;
+  width: 595px;
+  height: 126px;
+  color: #ffffff;
+  border-radius: 0px 34px 34px 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#title_pill_pharma {
+  background-color: #706f6f;
+}
+#title_pill_filtres{
+  background-color: #049F97;
+}
+#title_pill_poids{
+  background-color: #AC3121;
+}
+#title_pill_bouchon{
+  background-color:#E30613 ;
+}
+.product_list_headtext {
+  position: absolute;
+  width: 571px;
+  height: 83px;
+  left: 728px;
+  top: 280px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #6c6c6c;
+}
+.product_list_intro {
+  position: absolute;
+  width: 1275px;
+  height: 290px;
+  left: 24px;
+  top: 453px;
  
-}
-
-.mainHeader {
-  width: 100vw;
-  height: 16rem;
   display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-}
-#headerMenu {
-  height: 82px;
-  /* width: 100vw; */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-right: 20%;
-  background-color: #efefef;
-}
-.menuBtn {
-  height: 6rem;
-  width: 10rem;
-  border: none;
-  border-radius: 16px;
-  background-color: transparent;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-/* .menuBtn :focus{
-  font-size: 3rem;
-  background-color: red;
-} */
-
-.homeCarousel {
-  height: 967px;
-  width: 100vw;
-}
-.presentationContainer {
-  display: flex;
-  width: 95vw;
-  flex-direction: column;
-  padding: 24px;
-}
-#presentationHeader {
-  font-size: 56px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 24px;
-}
-#presentationHeader h1 {
-  margin: 0;
-  margin-bottom: 12px;
-}
-#headerLine {
-  height: 1px;
-  background-color: black;
-  width: 362px;
-}
-#presentationBody {
-  font-size: 18px;
- width: 80%;
-  line-height: 1.8em;
-  font-family: "Work Sans", sans-serif;
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
-#presentationBody img {
-  height: 260px;
-  width: 320px;
+.product_list_intro_container {
+  width: 850px;
 }
-.underlineText {
-  color: #3d90ce;
+.product_list_intro_text {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
 }
-/* #presentationFooter {
+.product_list_intro_title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.productCardContainer {
+  width: 100%;
+  position: absolute;
+  top: 932px;
+  left: 0;
+}
+.productCard {
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  margin-top: 24px;
 }
-#presentationFooter img {
-  height: 260px;
-  width: 320px;
-} */
-.H_Products {
+.productCardContents {
+  width: 840px;
+  
+}
+.productCardHead {
+  width: 840px;
+  height: 112px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 30rem;
+  box-shadow: 4px 4px 4px #6c6c6c;
+  border-radius: 0px 0px 70px 6px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+ 
+  color: #626262;
+  cursor: pointer;
 }
-.H_Products_Text {
-  display: flex;
-  flex-direction: column;
+.productCardTextTitle{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+margin-top: 16px;
 }
-.H_Products_Categories {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+.productCardText{
+  margin-top: 88px;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+padding: 16px;
 }
-.H_Products_Categories div {
-  width: 30%;
-  display: flex;
-  justify-content: center;
-}
-/* .H_Products_Categories div img{
-  width: 80%;
-} */
-
-#contactBox {
-  width: 100%;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-}
-#contactTitle {
-  font-size: 64px;
-  position: absolute;
-  right: 50vw;
-  transform: translateX(50%);
+.accentGreen{
+  color:#049F97
 }

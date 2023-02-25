@@ -11,12 +11,14 @@ import Contact from "../components/contact";
 export default function Home() {
   let router = useRouter();
   return (
-    <div className="main_body">
+    <>
       <Header class="mainHeader"></Header>
+    <div className="main_Body">
       <Carousel></Carousel>
       <Presentation></Presentation>
       <HomeProducts></HomeProducts>
       <Contact></Contact>
     </div>
+    </>
   );
 }
