@@ -8,7 +8,7 @@ export default function products_list_intro(props) {
             <p className='product_list_intro_title' style={{color: props.color}}> {props.title}</p>
             <p className='product_list_intro_text'>{props.text}</p>
         </div>
-        <div>
+        <div style={{ display : "flex", justifyContent : "center" , alignItems : "center"}}>
             <img src={props.url} style={{width: props.size.width, height: props.size.height}}/>
         </div>
     </div>

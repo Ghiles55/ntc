@@ -19,12 +19,13 @@ export default function () {
       <Products_list_intro
         title="Protéger les personnes, les produits et les infrastructures critiques"
         text="Depuis 1961, ATI est le principal concepteur et fabricant d'équipements de test spécialisés pour les filtres à particules à haute efficacité (HEPA), les supports plats, les cartouches filtrantes et les respirateurs utilisés par les organisations gouvernementales, militaires et commerciales du monde entier. Aujourd'hui, ATI continue d'innover en proposant de nouvelles technologies dans le domaine de la détection CBRNE, notamment la détection des menaces biologiques et le test des masques respiratoires militaires."
-        url="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png"
-        size={{ height: 264, width: 415 }}></Products_list_intro>
+        url="https://i.postimg.cc/kGYJGJ9S/ATI-450-1.png"
+        size={{ height: 300, width: 450 }}></Products_list_intro>
       <div className="productCardContainer">
         <ProductListCard
           title="PHOTOMÈTRES ET ACCESSOIRES"
           color="#049F97"
+          image={{link:'https://i.postimg.cc/Jzkr7CFy/image-1.png' , id:'img06' }}
           text={
             <Fragment>
               {" "}
@@ -45,6 +46,7 @@ export default function () {
         <ProductListCard
           title="GÉNÉRATEURS D'AÉROSOLS ET ACCESSOIRES"
           color="#049F97"
+          image={{link:'https://i.postimg.cc/zX3DMgSF/image-2.png' , id:'img06' }}
           text={
             <Fragment>
               {" "}

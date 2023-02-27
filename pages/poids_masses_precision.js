@@ -23,8 +23,8 @@ export default function () {
           Spécialiste dans notre domaine, nous maitrisons au sein de notre site tous les stades de la fabrication de nos poids, de la sélection des matières premières à leur expédition.
           Zwiebel bénéficie de longue date d’un savoir-faire industriel. Nos équipes sont continuellement formées aux exigences et attentes du marché.
           En découle une structure souple et dynamique, un goût du travail bien fait et un état d’esprit artisanal allié aux techniques modernes et technologies de pointes."
-          url="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png"
-          size={{ height: 264, width: 415 }}></Products_list_intro>
+          url="https://i.postimg.cc/jjLwK1bC/image-4.png"
+          size={{ height: 216, width: 440 }}></Products_list_intro>
 
     </>
   )

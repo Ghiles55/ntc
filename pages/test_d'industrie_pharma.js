@@ -22,8 +22,8 @@ export default function categories() {
           text="Depuis 1951, la société allemande ERWEKA fabrique des testeurs pour l’industrie pharmaceutique.
 Reconnu internationalement , ERWEKA propose un produit pour chaque test de la pharmacopée 100% conforme USP/EP/JP.
 De nombreux laboratoires et universités à travers le monde sont équipés d’appareils ERWEKA. En outre des testeurs de pharmacopée, ERWEKA dispose également d’une gamme astucieuse d’appareils à usage multiple et une grande variété de testeurs de dissolution."
-          url="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png"
-          size={{ height: 264, width: 415 }}></Products_list_intro>
+          url="https://i.postimg.cc/fRzsqY8B/erweka-logo-1.png"
+          size={{ height: 68, width: 370 }}></Products_list_intro>
         <div className="productCardContainer">
           {/* <div className="productCard">
               <div className="productCardContents">
